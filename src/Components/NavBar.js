@@ -11,8 +11,8 @@ function NavBar() {
     { name: "projects", link: "/projects" },
     { name: "contact us", link: "/contact" },
     {
-      name: "others",
-      link: "/others",
+      name: "articles",
+      link: "/articles",
       subItems: [
         { name: "Others 1", link: "/others1" },
         { name: "Others 2", link: "/others2" },

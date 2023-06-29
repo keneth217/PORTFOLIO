@@ -17,30 +17,28 @@ function Skills() {
           >
             Database
           </Button>
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          <div style={{ minHeight: "150px" }}>
+     
+       
+          <div style={{ minHeight: "100%" }}>
             <Collapse in={open}>
               <div id="example-collapse-text">
-                <Card body style={{ width: "50%" }}>
+                <Card body style={{ width: "100%" }}>
                   <Row>
                     <Col>
                       <Card.Title>Languages:</Card.Title>
-                      <ul>
+                      <ol>
                         {languages.map((language, index) => (
                           <li key={index}>{language}</li>
                         ))}
-                      </ul>
+                      </ol>
                     </Col>
                     <Col>
                       <Card.Title>Databases:</Card.Title>
-                      <ul>
+                      <ol>
                         {databases.map((database, index) => (
                           <li key={index}>{database}</li>
                         ))}
-                      </ul>
+                      </ol>
                     </Col>
                   </Row>
                 </Card>
