@@ -2,6 +2,7 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import "./Home.css";
 const About = () => {
   return (
     <div className="p-5 vh-100 bg-dark ">

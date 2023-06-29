@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Button, Card, Collapse, Col, Container, Row } from 'react-bootstrap';
-
+import "./Home.css";
 function Skills() {
   const [open, setOpen] = useState(false);
   const languages = ['Java', 'React', 'Vue'];
