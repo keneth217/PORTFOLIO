@@ -14,9 +14,9 @@ function NavBar() {
       name: "articles",
       link: "/articles",
       subItems: [
-        { name: "Others 1", link: "/others1" },
-        { name: "Others 2", link: "/others2" },
-        { name: "Others 3", link: "/others3" },
+        { name: "Others 1", link: "/articleone" },
+        { name: "Others 2", link: "/articletwo" },
+        // { name: "Others 3", link: "/others3" },
       ],
     },
   ]);
