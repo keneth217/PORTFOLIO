@@ -7,12 +7,12 @@ import Col from 'react-bootstrap/Col';
 import "./Home.css";
 function Contacts() {
   return (
-    <Container fluid className="bg-dark vh-100 d-flex text-white align-items-center justify-content-center">
+    <Container fluid className="bg-dark vh-100  d-flex text-white align-items-center justify-content-center">
       <Row className="justify-content-center">
-        <Col xs={12} md={6}>
-          <Card className="text-center bg-dark text-white " style={{ width: '50vw' ,height:'50vh'}}>
+        <Col lg={6} xs={12} md={6}>
+          <Card className="text-center bg-dark text-white "  style={{ width: '50vw' ,height:'50vh'}}>
             <Card.Header>contact me</Card.Header>
-            <Card.Body>
+            <Card.Body className=''>
               <Card.Title>fill the form below</Card.Title>
               <Card.Text>
                 <Form>

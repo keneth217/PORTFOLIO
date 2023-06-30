@@ -9,7 +9,7 @@ function NavBar() {
     { name: "home", link: "/" },
     { name: "about", link: "/about" },
     { name: "projects", link: "/projects" },
-    { name: "contact us", link: "/contact" },
+    { name: "contact us", link: "/contacts" },
     {
       name: "articles",
       link: "/articles",

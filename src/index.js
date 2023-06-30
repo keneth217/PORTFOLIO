@@ -4,13 +4,17 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { SSRProvider } from 'react-bootstrap';
+import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-   <SSRProvider> 
+    <BrowserRouter>
+    <SSRProvider> 
    <App />
     </SSRProvider>;
+    </BrowserRouter>
+  
    
   </React.StrictMode>
 );
