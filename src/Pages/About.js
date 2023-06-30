@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 import "./Home.css";
 const About = () => {
   return (
-    <div className="p-5 vh-100 bg-dark ">
+    <div className="mt-5 vh-100 bg-dark ">
       <Container fluid className="text-white p-5 bg-dark justify-content-space-between">
         <Row>
           <Col>
@@ -38,6 +38,6 @@ const About = () => {
       </Container>
     </div>
   );
-};
+}
 
 export default About;

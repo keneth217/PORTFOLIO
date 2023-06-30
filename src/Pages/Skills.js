@@ -5,6 +5,8 @@ function Skills() {
   const [open, setOpen] = useState(false);
   const languages = ['Java', 'React', 'Vue'];
   const databases = ['MySQL', 'PostgreSQL'];
+  const design = ['Figma', ''];
+  const servers = ['Apache', ''];
 
   return (
     <Container>
@@ -15,7 +17,7 @@ function Skills() {
             aria-controls="example-collapse-text"
             aria-expanded={open}
           >
-            Database
+            My Skills
           </Button>
      
        
@@ -37,6 +39,22 @@ function Skills() {
                       <ol>
                         {databases.map((database, index) => (
                           <li key={index}>{database}</li>
+                        ))}
+                      </ol>
+                    </Col>
+                    <Col>
+                      <Card.Title>serves:</Card.Title>
+                      <ol>
+                        {servers.map((server, index) => (
+                          <li key={index}>{server}</li>
+                        ))}
+                      </ol>
+                    </Col>
+                    <Col>
+                      <Card.Title>UI/UX:</Card.Title>
+                      <ol>
+                        {design.map((design, index) => (
+                          <li key={index}>{design}</li>
                         ))}
                       </ol>
                     </Col>

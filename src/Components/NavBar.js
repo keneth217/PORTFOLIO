@@ -1,51 +1,48 @@
-import React, { useState } from 'react';
+
+import react from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Link } from 'react-router-dom';
 
 function NavBar() {
-  const [links, setLinks] = useState([
-    { name: "home", link: "/" },
-    { name: "about", link: "/about" },
-    { name: "projects", link: "/projects" },
-    { name: "contact us", link: "/contacts" },
-    {
-      name: "articles",
-      link: "/articles",
-      subItems: [
-        { name: "Others 1", link: "/articleone" },
-        { name: "Others 2", link: "/articletwo" },
-        // { name: "Others 3", link: "/others3" },
-      ],
-    },
-  ]);
-
   return (
-    <Navbar expand="lg" className="bg-body-tertiary" fixed="top">
-      <Container>
-        <Navbar.Brand href="#home">KENETH</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto text uppercase">
-            {links.map((link) => (
-              <React.Fragment key={link.name}>
-                <Nav.Link href={link.link}>{link.name}</Nav.Link>
-                {link.subItems && (
-                  <NavDropdown title={link.name} id="basic-nav-dropdown">
-                    {link.subItems.map((subItem) => (
-                      <NavDropdown.Item key={subItem.name} href={subItem.link}>
-                        {subItem.name}
-                      </NavDropdown.Item>
-                    ))}
-                  </NavDropdown>
-                )}
-              </React.Fragment>
-            ))}
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+<nav class="navbar navbar-expand-lg navbar-light fixed-top card-shadow bg-primary">
+  <div class="container-fluid">
+    <Link class="navbar-brand" to="/">KENETH</Link>
+    <button class="navbar-toggler" type="button"data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+         < Link class="nav-link active" aria-current="page" to="/">Home</Link>
+        </li>
+        <li class="nav-item">
+         < Link class="nav-link" to="/about">about</Link>
+        </li>
+        <li class="nav-item">
+         < Link class="nav-link" to="/projects">Projects</Link>
+        </li>
+        <li class="nav-item">
+         < Link class="nav-link" to="/contacts">contacts</Link>
+        </li>
+        <li class="nav-item dropdown">
+         < Link class="nav-link dropdown-toggle" to="/articles" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            articles
+          </Link>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><Link class="dropdown-item" to="#">articles</Link></li>
+            <li><Link class="dropdown-item" to="#">articlesone</Link></li>
+            <li><Link class="dropdown-item" to="#">articlestwo</Link></li>
+            
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
   );
 }
 

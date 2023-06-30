@@ -7,13 +7,16 @@ import Col from 'react-bootstrap/Col';
 import "./Home.css";
 function Contacts() {
   return (
-    <Container fluid className="bg-dark vh-100  d-flex text-white align-items-center justify-content-center">
-      <Row className="justify-content-center">
+   <div className="bg-dark vh-100  text-white justify-content-center mt-5">
+    <Container fluid >
+      <Row className="justify-content-center ">
         <Col lg={6} xs={12} md={6}>
-          <Card className="text-center bg-dark text-white "  style={{ width: '50vw' ,height:'50vh'}}>
+          <Card className="text-center bg-dark text-white  mt-5" 
+          //  style={{ width: '50vw' ,height:'50vh'}}
+           >
             <Card.Header>contact me</Card.Header>
             <Card.Body className=''>
-              <Card.Title>fill the form below</Card.Title>
+              {/* <Card.Title>fill the form below</Card.Title> */}
               <Card.Text>
                 <Form>
                   <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
@@ -37,6 +40,7 @@ function Contacts() {
         </Col>
       </Row>
     </Container>
+    </div>
   );
 }
 

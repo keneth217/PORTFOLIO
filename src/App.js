@@ -10,6 +10,7 @@ import Articles from "./Pages/Articles";
 import Projects from "./Pages/Projects";
 import ArticleOne from "./Pages/ArticleOne";
 import ArticleTwo from "./Pages/ArticleTwo";
+import Port from "./Pages/Port";
 function App() {
   return (
     <div>
@@ -25,7 +26,7 @@ function App() {
         </Route>
         <Route path="*" element={<PageNotFound />} />
       </Routes>
-
+      <Port/>
       <Footer />
     </div>
   );
