@@ -9,6 +9,7 @@ function Skills() {
   const servers = ['Apache', ''];
 
   return (
+    <div className='mt-2'>
     <Container>
       <Row>
         <Col>
@@ -66,6 +67,7 @@ function Skills() {
         </Col>
       </Row>
     </Container>
+    </div>
   );
 }
 

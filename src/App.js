@@ -11,12 +11,13 @@ import Projects from "./Pages/Projects";
 import ArticleOne from "./Pages/ArticleOne";
 import ArticleTwo from "./Pages/ArticleTwo";
 import Port from "./Pages/Port";
+import CubeAnimation from "./Pages/CubeAnimation";
 function App() {
   return (
     <div>
       <NavBar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<CubeAnimation/>} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contacts" element={<Contacts />} />

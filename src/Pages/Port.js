@@ -6,7 +6,7 @@ import { FaFacebook, FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Port() {
   return (
-    <div className="bg-dark text-white justify-content-center mt-5">
+    <div className="container-fluid bg-dark text-white justify-content-center  mt-5">
       <Container fluid>
         <Row>
           <Col xs={12} md={4} className="mb-3">

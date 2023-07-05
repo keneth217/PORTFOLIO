@@ -33,9 +33,9 @@ function NavBar() {
             articles
           </Link>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><Link class="dropdown-item" to="#">articles</Link></li>
-            <li><Link class="dropdown-item" to="#">articlesone</Link></li>
-            <li><Link class="dropdown-item" to="#">articlestwo</Link></li>
+            <li><Link class="dropdown-item" to="/articles">articles</Link></li>
+            <li><Link class="dropdown-item" to="/articlesone">articlesone</Link></li>
+            <li><Link class="dropdown-item" to="/articlestwo">articlestwo</Link></li>
             
           </ul>
         </li>
